@@ -97,6 +97,8 @@ echo 'Instalando o multiqc'
 sudo apt install multiqc 1>$MeuDrive/logs/multiqc.log 2>$MeuDrive/logs/multiqc.log
 ```
 
+`curl` realiza requisições HTTP, permitindo baixar arquivos através do link.
+
 ```bash
 %%bash
 MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"
@@ -125,7 +127,7 @@ java -jar picard.jar CreateSequenceDictionary \
 
 ## Script para Análise Germinativa
 
-Antes de inciar, é preciso garantir que os arquivos FASTQ R1 e R2 estejam na pasta `dados/fastq/` e sejam devidamente nomeados nas variáveis "amostra" e "fastq1" e "fastq2".
+Antes de inciar, é preciso garantir que os arquivos FASTQ R1 e R2 estejam na pasta `dados/fastq/` do Drive e sejam devidamente nomeados nas variáveis "amostra" e "fastq1" e "fastq2".
 
 ```bash
 %%bash
@@ -234,10 +236,13 @@ samtools index $MeuDrive/$amostra/output/$amostra.bam
 MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"
 amostra="cap-ngse-b-2019-chr1"
 
+# Conversão de BAM para BED
+
 bedtools bamtobed -i $MeuDrive/$amostra/output/$amostra.bam >$MeuDrive/$amostra/output/$amostra.bed
 bedtools merge -i $MeuDrive/$amostra/output/$amostra.bed >$MeuDrive/$amostra/output/$amostra.merged.bed
 bedtools sort -i $MeuDrive/$amostra/output/$amostra.merged.bed >$MeuDrive/$amostra/output/$amostra.sorted.bed
 ```
+Etapa extra: Mark Duplicates (identifica e marca duplicatas no BAM).
 
 ```bash
 %%bash
@@ -250,6 +255,8 @@ java -jar picard.jar MarkDuplicates \
     M=$MeuDrive/$amostra/output/$amostra.metrics.txt \
     REMOVE_DUPLICATES=true
 ```
+
+A conversão de `$amostra.bam` para `$amostra.marked.bam` ocorreu devido à etapa de marcação de duplicatas com Picard. Para que o pipeline prossiga corretamente, foi necessário indexar `$amostra.marked.bam` usando `samtools index`, gerando o arquivo `.bai`, que permite acesso rápido às regiões do BAM durante análises posteriores.
 
 ```bash
 %%bash
@@ -280,8 +287,6 @@ echo "Passo 5: Geração do relatório final"
 # Geração de relatórios ou visualizações
 multiqc $MeuDrive/$amostra/
 
-##abrir o multiqc_report e verificar tbm quais ferramentas o multiqc conhece e podemos rodar esse comando com reports de qualidade
-
 # Fim do pipeline
 echo "==========================="
 echo "Pipeline de Bioinformática Concluído!"
@@ -289,3 +294,117 @@ echo "==========================="
 ```
 
 ## Anotação de Variantes
+
+```bash
+%%bash
+
+wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
+unzip -o snpEff_latest_core.zip
+rm snpEff_latest_core.zip
+```
+
+Para rodar sem erros no Colab, foi necessário realizar o update da versão do java. 
+
+```bash
+%%bash
+
+sudo apt update
+sudo apt install openjdk-21-jre
+
+java -jar snpEff/snpEff.jar download -v GRCh38.p14
+```
+
+```bash
+%%bash
+MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"
+amostra="cap-ngse-b-2019-chr1"
+
+java -Xmx8g -jar snpEff/snpEff.jar -v GRCh38.p14 \
+    -stats $MeuDrive/$amostra/output/$amostra.html \
+    $MeuDrive/$amostra/output/$amostra.vcf.gz > $MeuDrive/$amostra/output/$amostra.ann.vcf
+```
+
+```bash
+%%bash
+
+mkdir snpEff/./db
+mkdir snpEff/./db/GRCh38
+mkdir snpEff/./db/GRCh38/clinvar
+mkdir snpEff/./db/GRCh38/dbSnp
+
+
+wget -O snpEff/./db/GRCh38/clinvar/clinvar-latest.vcf.gz \
+    https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
+wget -O snpEff/./db/GRCh38/clinvar/clinvar-latest.vcf.gz.tbi \
+    https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz.tbi
+
+wget -O snpEff/./db/GRCh38/dbSnp/dbSnp.vcf.gz \
+    ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/VCF/00-common_all.vcf.gz
+wget -O snpEff/./db/GRCh38/dbSnp/dbSnp.vcf.gz.tbi \
+    ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/VCF/00-common_all.vcf.gz.tbi
+```
+
+```bash
+%%bash
+MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"
+amostra="cap-ngse-b-2019-chr1"
+
+java -Xmx1g -jar snpEff/SnpSift.jar \
+    annotate \
+    snpEff/./db/GRCh38/clinvar/clinvar-latest.vcf.gz \
+    $MeuDrive/$amostra/output/$amostra.ann.vcf \
+    > $MeuDrive/$amostra/output/$amostra.clinvar.ann.vcf
+```
+
+```bash
+%%bash
+
+MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"
+amostra="cap-ngse-b-2019-chr1"
+
+gatk-4.1.8.1/gatk VariantsToTable -V $MeuDrive/$amostra/output/$amostra.clinvar.ann.vcf \
+    -F CHROM \
+    -F POS \
+    -F QUAL \
+    -F TYPE \
+    -F ID \
+    -F ALLELEID \
+    -F CLNDN \
+    -F CLNSIG \
+    -F CLNSIGCONF \
+    -F CLNSIGINCL \
+    -F CLNVC \
+    -F GENEINFO \
+    -F AF_EXAC \
+    -F CLNHGVS \
+    -GF AD \
+    -GF DP \
+    -GF GQ \
+    -GF GT \
+    -O $MeuDrive/$amostra/output/$amostra.clinvar.ann.txt
+```
+
+## Interpretação de Variantes
+
+```python
+MeuDrive = "/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"
+amostra = "cap-ngse-b-2019-chr1"
+
+import pandas as pd
+from matplotlib import pyplot as plt
+import seaborn as sns
+import numpy as np
+
+caminho_arquivo = f"{MeuDrive}/{amostra}/output/{amostra}.clinvar.ann.txt"
+df = pd.read_csv(caminho_arquivo, sep="\t")
+df
+```
+
+![image](https://github.com/user-attachments/assets/8ab4e6e2-41cc-4554-8725-80dbe5c7dcc8)
+
+```python
+patho = df['CLNSIG'].isin(["Pathogenic", "Likely_pathogenic", "Uncertain_significance"])
+df[patho]
+```
+
+![image](https://github.com/user-attachments/assets/4aa4e116-d070-4d64-bde2-2717c17b33d3)
