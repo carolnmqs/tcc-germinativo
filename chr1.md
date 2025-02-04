@@ -13,7 +13,9 @@ from google.colab import drive
 drive.mount('/content/drive', force_remount=True)
 ```
 
-Criação do diretório principal dentro do Google Drive. Obs. sempre usar %%bash no colab, já que o ambiente é baseado em python. 
+Criação do diretório principal dentro do Google Drive. 
+
+**Observação:** Sempre utilize %%bash no Colab para rodar comandos de shell, pois o ambiente é baseado em Python e o %%bash permite a execução de comandos do sistema diretamente.
 
 ```bash
 %%bash
@@ -22,7 +24,7 @@ mkdir /content/drive/MyDrive/AtividadeFinalGerminativo_chr1
 
 Criação da estrutura de diretórios no Google Drive, dentro do caminho `/content/drive/MyDrive/AtividadeFinalGerminativo_chr1`, com subpastas para armazenar dados de fastq, bam, vcf, logs e referências.
 
-Observação: A partir deste ponto, será necessário especificar a variável `MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"` em cada novo bloco de código, devido a uma peculiaridade do Google Colab que não mantém variáveis entre blocos executados.
+**Observação:** A partir deste ponto, será necessário especificar a variável `MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"` em cada novo bloco de código, devido a uma peculiaridade do Google Colab que não mantém variáveis entre blocos executados.
 
 ```bash
 %%bash
