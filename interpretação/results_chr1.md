@@ -145,17 +145,30 @@ chr1: 110040713-110040713
 
 - Frequência: <0.001% no gnomAD Exome
 
-## CASQ2 *atenção para achado secundário
+## CASQ2 *atenção para achado secundári
 
-HGVS: 
+HGVS: CASQ2(NM_001232.4):c.926A>G
+p.(Asp309Gly)
+
+chr1: 115705205-115705205
+
+- Frequência: <0.001% no gnomAD Exome
 
 ## HSD3B2
 
-HGVS:
+HGVS: HSD3B2(NM_000198.4):c.809T>C
+p.(Ile270Thr)
+
+chr1: 119422310-119422310
+
+- Frequência: <0.001% no gnomAD Exome
 
 ## FCGR3A ✖️
 
-HGVS:
+HGVS: FCGR3A(NM_001127592.2):c.509T>A
+p.(Leu170His)
+
+chr1: 161548543-161548543
 
 - Frequência: 6% no gnomAD Exome
 
