@@ -144,8 +144,9 @@ p.? variante presente em região não-codificante
 chr1: 110040713-110040713
 
 - Frequência: <0.001% no gnomAD Exome
+- VAF: 61% - variante em heterozigose. 
 
-## CASQ2 *atenção para achado secundári
+## CASQ2 *atenção para achado secundário
 
 HGVS: CASQ2(NM_001232.4):c.926A>G
 p.(Asp309Gly)
@@ -153,6 +154,7 @@ p.(Asp309Gly)
 chr1: 115705205-115705205
 
 - Frequência: <0.001% no gnomAD Exome
+- VAF: 58% - variante em heterozigose. 
 
 ## HSD3B2
 
@@ -162,6 +164,7 @@ p.(Ile270Thr)
 chr1: 119422310-119422310
 
 - Frequência: <0.001% no gnomAD Exome
+- VAF: 58% - variante em heterozigose.
 
 ## FCGR3A ✖️
 
