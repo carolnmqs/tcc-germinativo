@@ -23,7 +23,7 @@ df[patho]
 
 ![image](https://github.com/user-attachments/assets/b1ec22e4-f5ca-450a-879e-1326e984a737)
 
-Após a anotação de variantes, com auxílio de ferramentas como o Pandas, para melhor visualização, filtramos o resultado final por "CLNSIG" (entrada no Clinvar) "Pathogenic", "Likely_pathogenic", "Uncertain_significance", para que todas as variantes com entrada e sem entrada fossem chamadas para análise manual. 
+Após a anotação de variantes, com auxílio de ferramentas como o Pandas, para melhor visualização, filtramos o resultado final por "CLNSIG" (entrada no Clinvar) "Pathogenic", "Likely_pathogenic", "Uncertain_significance", para que todas essas variantes fossem chamadas para análise manual. 
 
 Variantes encontradas: 7
 
