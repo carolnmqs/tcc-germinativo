@@ -111,7 +111,7 @@ echo 'Baixando o Genoma de Referência'
 
 mkdir -p reference
 
-# baixando o chr1
+# baixando o chr10
 curl -s "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr10.fa.gz" | \
   gunzip -c > $MeuDrive/reference/hg38.fasta
 
