@@ -293,8 +293,6 @@ echo "Passo 5: Geração do relatório final"
 # Geração de relatórios ou visualizações
 multiqc $MeuDrive/$amostra/
 
-##abrir o multiqc_report e verificar tbm quais ferramentas o multiqc conhece e podemos rodar esse comando com reports de qualidade
-
 # Fim do pipeline
 echo "==========================="
 echo "Pipeline de Bioinformática Concluído!"
