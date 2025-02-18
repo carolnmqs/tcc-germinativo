@@ -355,9 +355,10 @@ java -Xmx1g -jar snpEff/SnpSift.jar \
     $MeuDrive/$amostra/output/$amostra.ann.vcf \
     > $MeuDrive/$amostra/output/$amostra.clinvar.ann.vcf
 ```
-```bash
+
 Estamos utilizando um arquivo VCF anotado (`$amostra.clinvar.ann.vcf`) e usando o `GATK VariantsToTable` para extrair várias informações importantes das variantes, como posição, hgvs, frequência alélica, entrada no Clinvar (...). O comando vai gerar uma tabela no formato TXT, que será utilizada para análise posterior.
 
+```bash
 %%bash
 
 MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr11"
