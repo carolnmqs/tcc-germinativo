@@ -1,1 +1,27 @@
+## Atividade Final - chr11
 
+Link pro Colab para execução dos códigos: 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KR1l_J46_bDVmNP9RRh-jTfYNmpwVCGt#scrollTo=X4DKx1kv84pc)
+
+## Configuração do ambiente 
+
+Importação do módulo do Google Colab + montagem do Drive. O código permite acessar arquivos do Drive diretamente no ambiente do Colab, permitindo que arquivos gerados durante o processo sejam armazenados. 
+
+```bash
+from google.colab import drive
+drive.mount('/content/drive', force_remount=True)
+```
+
+Criação do diretório principal dentro do Google Drive. 
+
+**Observação:** Sempre utilize `%%bash` no Colab para rodar comandos de shell, pois o ambiente é baseado em Python e o `%%bash` permite a execução de comandos do sistema diretamente.
+
+```bash
+%%bash
+mkdir /content/drive/MyDrive/AtividadeFinalGerminativo_chr11
+```
+
+Criação da estrutura de diretórios no Google Drive, dentro do caminho `/content/drive/MyDrive/AtividadeFinalGerminativo_chr11`, com subpastas para armazenar dados de fastq, bam, vcf, logs e referências.
+
+**Observação:** A partir deste ponto, será necessário especificar a variável `MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr11"` em cada novo bloco de código, devido a uma peculiaridade do Google Colab que não mantém variáveis entre blocos executados.
