@@ -295,6 +295,8 @@ echo "==========================="
 
 ## Anotação de Variantes
 
+O SnpEff é uma ferramenta de anotação e previsão de impacto funcional de variantes. Durante os próximos passos, precisaremos baixar a ferramenta e anotar as variantes germinativas do chr1 usando `SnpEff` e `SnpSift`, adicionando informações do ClinVar e dbSNP a um VCF processado.
+
 ```bash
 %%bash
 
@@ -356,30 +358,20 @@ java -Xmx1g -jar snpEff/SnpSift.jar \
     > $MeuDrive/$amostra/output/$amostra.clinvar.ann.vcf
 ```
 
+Estamos utilizando um arquivo VCF anotado (`$amostra.clinvar.ann.vcf`) e usando o `GATK VariantsToTable` para extrair várias informações importantes das variantes, como posição, hgvs, frequência alélica, entrada no Clinvar (...). O comando vai gerar uma tabela no formato TXT, que será utilizada para análise posterior.
+
 ```bash
 %%bash
 
 MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"
 amostra="cap-ngse-b-2019-chr1"
 
-gatk-4.1.8.1/gatk VariantsToTable -V $MeuDrive/$amostra/output/$amostra.clinvar.ann.vcf \
-    -F CHROM \
-    -F POS \
-    -F QUAL \
-    -F TYPE \
-    -F ID \
-    -F ALLELEID \
-    -F CLNDN \
-    -F CLNSIG \
-    -F CLNSIGCONF \
-    -F CLNSIGINCL \
-    -F CLNVC \
-    -F GENEINFO \
-    -F AF_EXAC \
-    -F CLNHGVS \
-    -GF AD \
-    -GF DP \
-    -GF GQ \
-    -GF GT \
-    -O $MeuDrive/$amostra/output/$amostra.clinvar.ann.txt
+gatk-4.1.8.1/gatk VariantsToTable \
+    -V "$MeuDrive/$amostra/output/$amostra.clinvar.ann.vcf" \
+    -F CHROM -F POS -F QUAL -F TYPE -F ID -F ALLELEID \
+    -F CLNDN -F CLNSIG -F CLNSIGCONF -F CLNSIGINCL -F CLNVC \
+    -F GENEINFO -F AF_EXAC -F CLNHGVS -F ANN -F CLNDNINCL \
+    -F ONCDISDBINCL -F LOF \
+    -GF AD -GF DP -GF GQ -GF GT -GF AF \
+    -O "$MeuDrive/$amostra/output/$amostra.clinvar.ann.txt"
 ```
