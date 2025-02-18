@@ -181,7 +181,7 @@ fastqc "$input_fastq1" >> "$MeuDrive/logs/fastqc.log" 2>&1
 fastqc "$input_fastq2" >> "$MeuDrive/logs/fastqc.log" 2>&1
 ```
 
-A partir deste ponto,  será necessário especificar as variáveis `MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr1"` e `amostra="cap-ngse-b-2019-chr1"` em cada novo bloco de código, devido a uma peculiaridade do Google Colab que não mantém variáveis entre blocos executados.
+A partir deste ponto,  será necessário especificar as variáveis `MeuDrive="/content/drive/MyDrive/AtividadeFinalGerminativo_chr10"` e `amostra="cap-ngse-b-2019-chr10"` em cada novo bloco de código, devido a uma peculiaridade do Google Colab que não mantém variáveis entre blocos executados.
 
 ```bash
 %%bash
