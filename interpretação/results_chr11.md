@@ -27,7 +27,7 @@ Essa variante tem frequência muito alta na população para ser causadora de um
 ACMG: Benigna
 - BA1 Stand Alone (frequência muito alta em controles populacionais saudáveis)
 
-## TPP1
+## TPP1 ✔️
 
 HGVS: TPP1(NM_000391.4):c.509-1G>A
 p.?
@@ -36,7 +36,16 @@ chr11:6617154-6617154
 
 - Frequência: 0.003% gnomAD Exome
 - VAF: 52% - variante em heterozigose.
-- OMIM: 
+- OMIM: Ceroid lipofuscinosis, neuronal e Spinocerebellar ataxia (ambos AR)
+
+ACMG: Patogênica
+- PVS1: Perda de função é um mecanismo conhecido da doença (o gene tem 153 variantes LOF patogênicas relatadas).
+- PP5: ClinVar classifica esta variante como Patogênica.
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD.
+
+`Doença relacionada a perda de fução do gene TPP1: A lipofuscinose ceróide neuronal (LCN) é um grupo de doenças neurodegenerativas raras, hereditárias e autossômicas recessivas. Também conhecida como doença de Batten, a LCN afeta o desenvolvimento cognitivo e motor. Principais sintomas Perda de visão, Convulsões, Declínio das capacidades mentais e motoras, Atraso na linguagem.
+
+Paciente é portador da doença e deve ser reportado no laudo como achado complementar. 
 
 ## TECTA ✖️
 
@@ -48,6 +57,10 @@ chr11:121157872-121157872
 - Frequência: 0.002% gnomAD Exome
 - VAF: 49% - variante em heterozigose.
 - OMIM: Deafness, autosomal dominant 8/12
+
+ACMG: VUS
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD
+- BP4: Variante missense com REVEL score abaixo de 0.4
 
 O fenótipo associado não é condizente com o caso clínico.
 
