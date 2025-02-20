@@ -38,7 +38,7 @@ chr11:6617154-6617154
 - VAF: 52% - variante em heterozigose.
 - OMIM: 
 
-## TECTA
+## TECTA ✖️
 
 HGVS: TECTA(NM_005422.4):c.4337C>G
 p.(Thr1446Arg)
