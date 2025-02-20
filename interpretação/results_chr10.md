@@ -101,4 +101,27 @@ ACMG: Patogênica (14 pontos)
 
 A alteração NFKB2 p.Arg853Ter está altamente associada à imunodeficiência primária, explicando a maioria dos fenótipos listados, especialmente infecções recorrentes, hipogamaglobulinemia e sintomas gastrointestinais. 
 
-## 
+## NT5C2 ✖️
+
+HGVS: NT5C2(NM_001351173.2):c.141G>C
+p.(Lys47Asn)
+
+chr10:103139440-103139440
+
+- Frequência: 0.017% no gnomAD Exome
+- VAF: 41% - HET
+- OMIM: Hereditary Spastic paraplegia 45 (AR)
+
+O fenótipo associado não é condizente com o caso clínico.
+
+## TCERG1L ✖️
+
+HGVS: TCERG1L(NM_174937.4):c.721G>A
+p.(Ala241Thr)
+
+chr10:131260394-131260394
+
+- Frequência: 0.0006% no gnomAD Exome
+- VAF: HET
+
+Não encontramos nenhuma patologia relacionada a essa variante nos banco de dados analisados (Varsome, Decipher, Clinvar).
