@@ -36,6 +36,7 @@ chr11:6617154-6617154
 
 - Frequência: 0.003% gnomAD Exome
 - VAF: 52% - variante em heterozigose.
+- OMIM: 
 
 ## TECTA
 
@@ -45,4 +46,17 @@ p.(Thr1446Arg)
 chr11:121157872-121157872
 
 - Frequência: 0.002% gnomAD Exome
+- VAF: 49% - variante em heterozigose.
+- OMIM: Deafness, autosomal dominant 8/12
+
+## MEN1  
+
+HGVS: MEN1(NM_001370259.2):c.1548dup
+p.(Lys517GlufsTer14)
+
+chr11:64804619-64804619
+
+- Frequência: <0.001% gnomAD Exome
+- VAF: 52% - variante em heterozigose.
+- OMIM: Multiple endocrine neoplasia 1 (AD)
 
