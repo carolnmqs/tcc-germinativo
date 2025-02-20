@@ -74,7 +74,7 @@ Essa variante tem frequência muito alta na população para ser causadora de um
 ACMG: Benigna
 - BA1 Stand Alone (frequência muito alta em controles populacionais saudáveis)
 
-## AK2
+## AK2 ✔️ achado primário
 
 Encontramos duas entradas nesse gene. 
 
@@ -86,7 +86,11 @@ chr1:33013287-33013287
 
 - Frequência: variante não passou nos critérios de qualidade do gnomAD Exome; 0.0563% no gnomad Genome.
 - OMIM: sem dados catalogados para análise. 
-- VAF: 88% = variante em homozigose. 
+- VAF: 88% = variante em homozigose.
+
+ACMG: VUS (0 pontos)
+- BS1: Frequência alélica é maior do que o esperado para a doença. -1
+- PP3: Variante em região de splicing +1
 
 2.
 HGVS: AK2(NM_001625.4):c.602A>T
@@ -96,7 +100,13 @@ chr1:33013299-33013299
 
 - Frequência: 0.0028% no gnomad Exome
 - OMIM: sem dados catalogados para análise. 
-- VAF: 88% = variante em homozigose. 
+- VAF: 88% = variante em homozigose.
+
+ACMG: VUS (0 pontos)
+- BS1: Frequência alélica é maior do que o esperado para a doença. -1
+- PP3: Analise funcional em silico +1
+
+O Gene AK2 está relacionado com disgenesia reticular (AR), que é uma doença genética rara que afeta o sistema imunológico. É uma forma grave de imunodeficiência primária em crianças. 
 
 ## CDCA8 ✖️
 
@@ -123,7 +133,7 @@ chr1:55056233-55056233
 
 Essa variante tem frequência muito alta na população para ser causadora de uma doença monogênica rara. 
 
-## ABCA4 ✔️
+## ABCA4 ✔️ achado primário
 
 HGVS: ABCA4(NM_000350.3):c.6146del
 p.(Lys2049ArgfsTer12)?
@@ -134,9 +144,14 @@ chr1: 94005442-94005442
 - VAF: 48% - variante em heterozigose. 
 - LOF: Deleçao frameshift que gera um códon de parada prematuro.
 
+ACMG: Patogênica (13 pontos)
+- PVS1: Perda de função é um mecanismo conhecido da doença (o gene tem 1.029 variantes LOF patogênicas relatadas). O exon afeta 1 domínio funcional: domínio ABCA4_HUMAN da proteína UniProt 'transportador ABC 2'. O exon contém 39 variantes patogênicas. A região truncada contém 214 variantes patogênicas. +8
+- PS4: Relatado no ClinVar em casos afetados nos seguintes envios: SCV001337922. ClinVar classifica esta variante como Patogênica, 2 estrelas (revisado em set. de 24, 3 envios), citando 5 artigos (31144483, 29975949, 25312043, 10958761 e 31814693). +4
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +1
+
 ```A variante c.6146del resulta em uma frameshift (mudança do quadro de leitura), levando à formação de uma proteína truncada e potencialmente não funcional. Esta variante está associada a doenças oculares autossômicas recessivas, como a Doença de Stargardt. O paciente está em heterozigose para esta variante, o que sugere que ele é portador assintomático. Não se espera que o paciente desenvolva a condição associada à variante. Contudo, é importante observar que o paciente pode transmitir a variante para futuros filhos, e se ambos os pais forem portadores, existe 25% de chance de um filho herdar as duas cópias da mutação e apresentar a condição. Recomenda-se aconselhamento genético para discussão das opções de testes para familiares.```
 
-## STRIP1
+## STRIP1 ✖️
 
 HGVS: STRIP1(NM_033088.4):c.650+10G>A
 p.? variante presente em região não-codificante
@@ -144,27 +159,41 @@ p.? variante presente em região não-codificante
 chr1: 110040713-110040713
 
 - Frequência: <0.001% no gnomAD Exome
-- VAF: 61% - variante em heterozigose. 
+- VAF: 61% - variante em heterozigose.
 
-## CASQ2 *atenção para achado secundário
+Variante em região intrônica. Não há informações sobre ela no OMIM e as informações presentes no Clinvar (https://www.ncbi.nlm.nih.gov/clinvar/variation/930957/) não condizem com a clínica do paciente. 
 
+## CASQ2 *atenção para achado secundário  ✖️
 HGVS: CASQ2(NM_001232.4):c.926A>G
 p.(Asp309Gly)
 
 chr1: 115705205-115705205
 
 - Frequência: <0.001% no gnomAD Exome
-- VAF: 58% - variante em heterozigose. 
+- VAF: 58% - variante em heterozigose.
+- OMIM: Ventricular tachycardia, catecholaminergic polymorphic, 2 (AR)
 
-## HSD3B2
+ACMG: VUS (2 pontos)
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +1
+- PP3: Variante missense com REVEL Score maior que 0.7 +1
+
+O fenótipo associado não é condizente com o caso clínico. Além disso, a variante está em heterozigose e a condição é autossomica recessiva. 
+
+## HSD3B2 ✖️
 
 HGVS: HSD3B2(NM_000198.4):c.809T>C
 p.(Ile270Thr)
 
 chr1: 119422310-119422310
 
-- Frequência: <0.001% no gnomAD Exome
-- VAF: 58% - variante em heterozigose.
+- Frequência: 0.073% no gnomAD Exome
+- VAF: 50% - variante em heterozigose.
+- OMIM: Adrenal hyperplasia, congenital, due to 3-beta-hydroxysteroid dehydrogenase 2 deficiency (AR)
+
+ACMG: VUS
+- BP4 -1
+
+O fenótipo associado não é condizente com o caso clínico. Além disso, a variante está em heterozigose e a condição é autossomica recessiva. 
 
 ## FCGR3A ✖️
 
