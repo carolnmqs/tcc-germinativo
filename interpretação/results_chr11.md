@@ -38,10 +38,10 @@ chr11:6617154-6617154
 - VAF: 52% - variante em heterozigose.
 - OMIM: Ceroid lipofuscinosis, neuronal e Spinocerebellar ataxia (ambos AR)
 
-ACMG: Patogênica
-- PVS1: Perda de função é um mecanismo conhecido da doença (o gene tem 153 variantes LOF patogênicas relatadas).
-- PP5: ClinVar classifica esta variante como Patogênica.
-- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD.
+ACMG: Provavelmente Patogênica (7 pontos)
+- PVS1: Perda de função é um mecanismo conhecido da doença (o gene tem 153 variantes LOF patogênicas relatadas). +4
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +1
+- PM3: Casos afetados relatados nas seguintes submissões: IDs A interrupção deste local de splicing foi observada em indivíduos com lipofuscinose ceroide neuronal (PMID: 10330339, 10356316, 22832778).'' ClinVar: 207574 Relatado no ClinVar em casos afetados nas seguintes submissões: SCV000696665: ''Foi relatado em vários indivíduos afetados com LINCL com atividade enzimática residual quase ausente.'+2
 
 `Doença relacionada a perda de fução do gene TPP1: A lipofuscinose ceróide neuronal (LCN) é um grupo de doenças neurodegenerativas raras, hereditárias e autossômicas recessivas. Também conhecida como doença de Batten, a LCN afeta o desenvolvimento cognitivo e motor. Principais sintomas Perda de visão, Convulsões, Declínio das capacidades mentais e motoras, Atraso na linguagem.
 
@@ -64,7 +64,7 @@ ACMG: VUS
 
 O fenótipo associado não é condizente com o caso clínico.
 
-## MEN1 *atenção para achado secundário
+## MEN1 *atenção para achado secundário ✔️
 
 HGVS: MEN1(NM_001370259.2):c.1548dup
 p.(Lys517GlufsTer14)
@@ -75,3 +75,9 @@ chr11:64804619-64804619
 - VAF: 52% - variante em heterozigose.
 - OMIM: Multiple endocrine neoplasia 1 (AD)
 
+ACMG: Patogênica (13 pontos)
+- PVS1: Mudança de quadro, perda de função da Proteina +8
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +1
+- PS4: Para doenças raras dominantes, que apareceram em casos afetados enquanto eram extremamente raras na população. +4
+
+Como a variante está na lista de achados secundários da ACMG e foi classificada como patogênica, ela também será incluída no laudo.
