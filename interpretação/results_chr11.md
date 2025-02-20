@@ -51,7 +51,7 @@ chr11:121157872-121157872
 
 O fenótipo associado não é condizente com o caso clínico.
 
-## MEN1  
+## MEN1 *atenção para achado secundário
 
 HGVS: MEN1(NM_001370259.2):c.1548dup
 p.(Lys517GlufsTer14)
