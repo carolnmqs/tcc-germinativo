@@ -49,6 +49,8 @@ chr11:121157872-121157872
 - VAF: 49% - variante em heterozigose.
 - OMIM: Deafness, autosomal dominant 8/12
 
+O fenótipo associado não é condizente com o caso clínico.
+
 ## MEN1  
 
 HGVS: MEN1(NM_001370259.2):c.1548dup
