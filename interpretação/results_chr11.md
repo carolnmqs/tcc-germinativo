@@ -1,3 +1,23 @@
+## Interpretação de variantes
+
+```python
+MeuDrive = "/content/drive/MyDrive/AtividadeFinalGerminativo_chr11"
+amostra = "cap-ngse-b-2019-chr11"
+
+import pandas as pd
+from matplotlib import pyplot as plt
+import seaborn as sns
+import numpy as np
+
+caminho_arquivo = f"{MeuDrive}/{amostra}/output/{amostra}.clinvar.ann.txt"
+df = pd.read_csv(caminho_arquivo, sep="\t")
+df
+```
+
+![image](https://github.com/user-attachments/assets/cc10d674-98ba-4dde-a0a4-3b2fb60a3a72)
+
+
+
 ```python
 patho = df['CLNSIG'].isin(["Pathogenic", "Likely_pathogenic", "Uncertain_significance", "Pathogenic/Likely_pathogenic"])
 filtered_df = df[patho]
