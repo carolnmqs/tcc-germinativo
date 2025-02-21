@@ -1,3 +1,11 @@
+## Participantes
+
+Caroline Nascimento Marques
+Isadora dos Reis Santos
+Leticia Santos Pimentel
+Paula Francinete
+Yasmin França
+
 # Atividade Final – Bioinformática Aplicada à Genômica Médica
 
 **Caso Clínico de Imunodeficiência e Distúrbios Endócrinos**
