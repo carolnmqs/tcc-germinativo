@@ -72,7 +72,7 @@ Essa variante tem frequência muito alta na população para ser causadora de um
 ACMG: Benigna
 - BA1 Stand Alone (frequência muito alta em controles populacionais saudáveis)
 
-## AK2 ✔️ achado primário
+## AK2 ✔️ achado complementar
 
 Encontramos duas entradas nesse gene. 
 
