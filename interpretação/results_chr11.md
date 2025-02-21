@@ -47,7 +47,7 @@ Essa variante tem frequência muito alta na população para ser causadora de um
 ACMG: Benigna
 - BA1 Stand Alone (frequência muito alta em controles populacionais saudáveis)
 
-## TPP1 ✔️
+## TPP1 ✔️ complementar
 
 HGVS: TPP1(NM_000391.4):c.509-1G>A
 p.?
@@ -58,14 +58,14 @@ chr11:6617154-6617154
 - VAF: 52% - variante em heterozigose.
 - OMIM: Ceroid lipofuscinosis, neuronal e Spinocerebellar ataxia (ambos AR)
 
-ACMG: Provavelmente Patogênica (7 pontos)
-- PVS1: Perda de função é um mecanismo conhecido da doença (o gene tem 153 variantes LOF patogênicas relatadas). +4
-- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +1
+ACMG: Provavelmente Patogênica (12 pontos)
+- PVS1: Perda de função é um mecanismo conhecido da doença (o gene tem 153 variantes LOF patogênicas relatadas). +8
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +2
 - PM3: Casos afetados relatados nas seguintes submissões: IDs A interrupção deste local de splicing foi observada em indivíduos com lipofuscinose ceroide neuronal (PMID: 10330339, 10356316, 22832778).'' ClinVar: 207574 Relatado no ClinVar em casos afetados nas seguintes submissões: SCV000696665: ''Foi relatado em vários indivíduos afetados com LINCL com atividade enzimática residual quase ausente.'+2
 
 `Doença relacionada a perda de fução do gene TPP1: A lipofuscinose ceróide neuronal (LCN) é um grupo de doenças neurodegenerativas raras, hereditárias e autossômicas recessivas. Também conhecida como doença de Batten, a LCN afeta o desenvolvimento cognitivo e motor. Principais sintomas Perda de visão, Convulsões, Declínio das capacidades mentais e motoras, Atraso na linguagem.
 
-Paciente é portador da doença e deve ser reportado no laudo como achado complementar. 
+Paciente é heterozigoto para essa variante. Obs. pode ser que exista outra variante sem entrada no clinvar para esse gene que não foi encontrada em nossa busca.
 
 ## TECTA ✖️
 
@@ -95,9 +95,9 @@ chr11:64804619-64804619
 - VAF: 52% - variante em heterozigose.
 - OMIM: Multiple endocrine neoplasia 1 (AD)
 
-ACMG: Patogênica (13 pontos)
+ACMG: Patogênica (14 pontos)
 - PVS1: Mudança de quadro, perda de função da Proteina +8
-- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +1
 - PS4: Para doenças raras dominantes, que apareceram em casos afetados enquanto eram extremamente raras na população. +4
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +2
 
 Como a variante está na lista de achados secundários da ACMG e foi classificada como patogênica, ela também será incluída no laudo.
