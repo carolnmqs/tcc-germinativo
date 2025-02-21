@@ -97,7 +97,6 @@ chr11:64804619-64804619
 
 ACMG: Patogênica (14 pontos)
 - PVS1: Mudança de quadro, perda de função da Proteina +8
-- PS4: Para doenças raras dominantes, que apareceram em casos afetados enquanto eram extremamente raras na população. +4
 - PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +2
 
 Como a variante está na lista de achados secundários da ACMG e foi classificada como patogênica, ela também será incluída no laudo.
