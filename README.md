@@ -1,10 +1,10 @@
 ## Participantes
 
-Caroline Nascimento Marques
-Isadora dos Reis Santos
-Leticia Santos Pimentel
-Paula Francinete
-Yasmin França
+- Caroline Nascimento Marques
+- Isadora dos Reis Santos
+- Leticia Santos Pimentel
+- Paula Francinete
+- Yasmin França
 
 # Atividade Final – Bioinformática Aplicada à Genômica Médica
 
