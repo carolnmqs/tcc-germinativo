@@ -83,12 +83,12 @@ p.(Gly205Glu)
 chr1:33013287-33013287
 
 - Frequência: variante não passou nos critérios de qualidade do gnomAD Exome; 0.0563% no gnomad Genome.
-- OMIM: sem dados catalogados para análise. 
+- OMIM: disgenesia reticular (AR)
 - VAF: 88% = variante em homozigose.
 
-ACMG: VUS (0 pontos)
-- BS1: Frequência alélica é maior do que o esperado para a doença. -1
-- PP3: Variante em região de splicing +1
+ACMG: Prov. Benigna (-3 pontos)
+- BS1: Frequência alélica é maior do que o esperado para a doença. -4 (valor baseado no threshold do arquivo https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00549-6/tables/2,  (< 0.01%))
+- PP3: Evidências computacionais mostram efeito deletério (REVEL SCORE - Pathogenic Moderate) +1
 
 2.
 HGVS: AK2(NM_001625.4):c.602A>T
@@ -97,12 +97,12 @@ p.(Tyr201Phe)
 chr1:33013299-33013299
 
 - Frequência: 0.0028% no gnomad Exome
-- OMIM: sem dados catalogados para análise. 
+- OMIM: disgenesia reticular (AR)
 - VAF: 88% = variante em homozigose.
 
-ACMG: VUS (0 pontos)
-- BS1: Frequência alélica é maior do que o esperado para a doença. -1
-- PP3: Analise funcional em silico +1
+ACMG: VUS (3 pontos)
+PM2: Frequência alélica menor do que o esperado para a doença (< 0.01%) +2 > https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00549-6/tables/2
+PP3: Evidências computacionais mostram efeito deletério (REVEL SCORE - Pathogenic Moderate) +1
 
 O Gene AK2 está relacionado com disgenesia reticular (AR), que é uma doença genética rara que afeta o sistema imunológico. É uma forma grave de imunodeficiência primária em crianças. 
 
@@ -141,13 +141,15 @@ chr1: 94005442-94005442
 - Frequência: <0.001% no gnomAD Exome
 - VAF: 48% - variante em heterozigose. 
 - LOF: Deleçao frameshift que gera um códon de parada prematuro.
+- OMIM: degeneração macular relacionada à idade, tipo 2 - (AD)
 
-ACMG: Patogênica (13 pontos)
+ACMG: Patogênica (14 pontos)
 - PVS1: Perda de função é um mecanismo conhecido da doença (o gene tem 1.029 variantes LOF patogênicas relatadas). O exon afeta 1 domínio funcional: domínio ABCA4_HUMAN da proteína UniProt 'transportador ABC 2'. O exon contém 39 variantes patogênicas. A região truncada contém 214 variantes patogênicas. +8
 - PS4: Relatado no ClinVar em casos afetados nos seguintes envios: SCV001337922. ClinVar classifica esta variante como Patogênica, 2 estrelas (revisado em set. de 24, 3 envios), citando 5 artigos (31144483, 29975949, 25312043, 10958761 e 31814693). +4
-- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +1
+- PM2: Frequência extremamente baixa em bancos de dados populacionais do gnomAD. +2
 
-```A variante c.6146del resulta em uma frameshift (mudança do quadro de leitura), levando à formação de uma proteína truncada e potencialmente não funcional. Esta variante está associada a doenças oculares autossômicas recessivas, como a Doença de Stargardt. O paciente está em heterozigose para esta variante, o que sugere que ele é portador assintomático. Não se espera que o paciente desenvolva a condição associada à variante. Contudo, é importante observar que o paciente pode transmitir a variante para futuros filhos, e se ambos os pais forem portadores, existe 25% de chance de um filho herdar as duas cópias da alteração e apresentar a condição. Recomenda-se aconselhamento genético para discussão das opções de testes para familiares.```
+A variante c.6146del resulta em uma frameshift (mudança do quadro de leitura), levando à formação de uma proteína truncada e potencialmente não funcional.
+A degeneração macular relacionada à idade (DMRI) causa lesão progressiva da mácula, a área central e mais vital da retina, tendo como consequência a perda de visão.
 
 ## STRIP1 ✖️
 
