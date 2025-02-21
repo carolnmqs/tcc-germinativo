@@ -52,7 +52,7 @@ chr10:72008537-72008537
 - VAF: HET
 
 ACMG: Benigna
-- BP7	Está em uma região UTR. (Variante sinônima ou não codificadora que não está localizada em uma região de splicing e não se prevê que tenha consequências que alterem o splicing). -2
+- BP7 (Variante sinônima ou não codificadora que não está localizada em uma região de splicing e não se prevê que tenha consequências que alterem o splicing). -1
 
 ## TMEM ✖️
 
@@ -82,7 +82,7 @@ chr10:82985500-82985500
 
 Essa variante tem frequência muito alta na população para ser causadora de uma doença monogênica rara.
 
-## NFKB2 ✔️
+## NFKB2 ✔️ achado primário
 
 HGVS: NFKB2(NM_001322934.2):c.2557C>T
 p.(Arg853Ter)
@@ -93,12 +93,12 @@ chr10:102402138-102402138
 - VAF: 50% - HET
 - OMIM: Immunodeficiency, common variable, 10 (AD)
 
-ACMG: Patogênica (14 pontos)
-- PS2: Relatado de novo no ClinVar nos seguintes envios: SCV000773792: ​​''Em pelo menos um indivíduo, a variante foi observada como de novo.' +1
-- PM2: Frequência populacional 0,0%. Variante não encontrada nos genomas gnomAD +1
+ACMG: Patogênica (18 pontos)
 - PVS1: A perda de função é um mecanismo conhecido da doença: 15 variantes nulas patogênicas foram relatadas em ClinVar para este gene ( chr10:104161900:CA>C :HG19, chr10:104161908:CCAGCA>C :HG19, chr10:104161893:CCCGAGACA>C :HG19, chr10:104161895:C>T :HG19...), em 7 exons diferentes, dos quais 4 variantes neste exon (22) pontuação observada/esperada do gnomAD. +8
 - PS3: Estudos experimentais mostraram que esse sinal de parada translacional prematuro afeta a função do NFKB2 (PMID: 24140114, 28778864) +4
-
+- PS2: Relatado de novo no ClinVar nos seguintes envios: SCV000773792: ​​''Em pelo menos um indivíduo, a variante foi observada como de novo.' +4
+- PM2: Frequência populacional 0,0%. Variante não encontrada nos genomas gnomAD +2
+- 
 A alteração NFKB2 p.Arg853Ter está altamente associada à imunodeficiência primária, explicando a maioria dos fenótipos listados, especialmente infecções recorrentes, hipogamaglobulinemia e sintomas gastrointestinais. 
 
 ## NT5C2 ✖️
