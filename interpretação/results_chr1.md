@@ -6,13 +6,11 @@ R1:
 
 ![image](https://github.com/user-attachments/assets/8dcbe6da-39b6-496b-88ca-bed255ee69ca)
 
-Interpretação:
-
 R2: 
 
 ![image](https://github.com/user-attachments/assets/304c4228-00c3-4107-884a-564a8bbb050d)
 
-Interpretação: 
+Interpretação: A análise de qualidade por base (Per Base Sequence Quality) apresentou valores de Phred variando entre 28 e 34 ao longo dos reads, indicando uma qualidade geral alta. Como valores de Phred acima de 30 representam uma taxa de erro inferior a 0,1%, os dados são considerados confiáveis para análises downstream
 
 
 ## Interpretação de Variantes
